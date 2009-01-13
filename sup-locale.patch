@@ -1,0 +1,11 @@
+--- sup-0.6.orig/lib/sup.rb	2008-08-04 04:54:33.000000000 +0200
++++ sup-0.6/lib/sup.rb	2009-01-13 20:01:14.000000000 +0100
+@@ -252,7 +252,7 @@
+ end
+ 
+ ## determine encoding and character set
+-  $encoding = Locale.current.charset
++  $encoding = Locale.charset
+   if $encoding
+     Redwood::log "using character set encoding #{$encoding.inspect}"
+   else
