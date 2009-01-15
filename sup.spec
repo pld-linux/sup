@@ -1,4 +1,3 @@
-# TODO: utf8 support: http://sup.rubyforge.org/wiki/wiki.pl?UTF8
 Summary:	Sup is a console-based email client for people with a lot of email
 Summary(hu.UTF-8):	Sup egy konzolos email kliens azoknak, akiknek sok emailjük van
 Name:		sup
