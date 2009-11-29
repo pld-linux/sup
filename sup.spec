@@ -4,7 +4,7 @@ Name:		sup
 Version:	0.9
 Release:	0.1
 License:	GPL v2
-Source0:	http://rubyforge.org/frs/download.php/64727/sup-0.9.tgz
+Source0:	http://rubyforge.org/frs/download.php/64727/%{name}-%{version}.tgz
 # Source0-md5:	88f925f78022d28cd283405c7c35fb16
 Group:		Applications/Mail
 URL:		http://sup.rubyforge.org/
@@ -14,13 +14,16 @@ BuildRequires:	ruby >= 1:1.8.6
 BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
 Requires:	ruby-Ncurses
+Requires:	ruby-RubyGems
 Requires:	ruby-ferret
+Requires:	ruby-gettext
 Requires:	ruby-highline
 Requires:	ruby-lockfile
 Requires:	ruby-mail
 Requires:	ruby-mime-types
 Requires:	ruby-net-ssh
 Requires:	ruby-trollop
+Suggests:	gnupg
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
