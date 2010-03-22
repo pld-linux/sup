@@ -1,11 +1,11 @@
 Summary:	Sup is a console-based email client for people with a lot of email
 Summary(hu.UTF-8):	Sup egy konzolos email kliens azoknak, akiknek sok emailjük van
 Name:		sup
-Version:	0.9
+Version:	0.10.2
 Release:	0.1
 License:	GPL v2
-Source0:	http://rubyforge.org/frs/download.php/64727/%{name}-%{version}.tgz
-# Source0-md5:	88f925f78022d28cd283405c7c35fb16
+Source0:	http://rubyforge.org/frs/download.php/68831/%{name}-%{version}.tgz
+# Source0-md5:	6e8241bccc782fbdce061fdb5ab40c34
 Group:		Applications/Mail
 URL:		http://sup.rubyforge.org/
 Patch0:		%{name}-locale.patch
@@ -59,6 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/sup
 %attr(755,root,root) %{_bindir}/sup-add
 %attr(755,root,root) %{_bindir}/sup-config
+%attr(755,root,root) %{_bindir}/sup-convert-ferret-index
 %attr(755,root,root) %{_bindir}/sup-dump
 %attr(755,root,root) %{_bindir}/sup-recover-sources
 %attr(755,root,root) %{_bindir}/sup-sync
