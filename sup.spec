@@ -19,10 +19,11 @@ Requires:	ruby-ferret
 Requires:	ruby-gettext
 Requires:	ruby-highline
 Requires:	ruby-lockfile
-Requires:	ruby-mail
 Requires:	ruby-mime-types
 Requires:	ruby-net-ssh
+Requires:	ruby-rmail
 Requires:	ruby-trollop
+Requires:	ruby-xapian
 Suggests:	gnupg
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
