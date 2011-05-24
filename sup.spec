@@ -1,11 +1,11 @@
 Summary:	Sup is a console-based email client for people with a lot of email
 Summary(hu.UTF-8):	Sup egy konzolos email kliens azoknak, akiknek sok emailjük van
 Name:		sup
-Version:	0.10.2
+Version:	0.12.1
 Release:	0.1
 License:	GPL v2
-Source0:	http://rubyforge.org/frs/download.php/68831/%{name}-%{version}.tgz
-# Source0-md5:	6e8241bccc782fbdce061fdb5ab40c34
+Source0:	http://rubyforge.org/frs/download.php/74067/%{name}-%{version}.tgz
+# Source0-md5:	a16f5511900ef4e6daccfdc78fc9c1db
 Group:		Applications/Mail
 URL:		http://sup.rubyforge.org/
 Patch0:		%{name}-locale.patch
@@ -43,7 +43,7 @@ kapcsolat-listával rendelkezés, sőt, még többel.
 
 %prep
 %setup -q
-%patch0 -p1
+# %patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -59,10 +59,12 @@ rm -rf $RPM_BUILD_ROOT
 %doc CONTRIBUTORS History.txt ReleaseNotes README.txt
 %attr(755,root,root) %{_bindir}/sup
 %attr(755,root,root) %{_bindir}/sup-add
+%attr(755,root,root) %{_bindir}/sup-cmd
 %attr(755,root,root) %{_bindir}/sup-config
-%attr(755,root,root) %{_bindir}/sup-convert-ferret-index
 %attr(755,root,root) %{_bindir}/sup-dump
+%attr(755,root,root) %{_bindir}/sup-import-dump
 %attr(755,root,root) %{_bindir}/sup-recover-sources
+%attr(755,root,root) %{_bindir}/sup-server
 %attr(755,root,root) %{_bindir}/sup-sync
 %attr(755,root,root) %{_bindir}/sup-sync-back
 %attr(755,root,root) %{_bindir}/sup-tweak-labels
